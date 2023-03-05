@@ -1,0 +1,51 @@
+public class Telephone {
+    private String ringtone;
+    private String phoneNumber;
+    private String model;
+
+    public Telephone(String ringtone, String phoneNumber, String model) {
+        this.ringtone = ringtone;
+        this.phoneNumber = phoneNumber;
+        this.model = model;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getRingtone() {
+        return ringtone;
+    }
+
+    public void setRingtone(String ringtone) {
+        this.ringtone = ringtone;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+    
+    public void callFriend(String friendNumber) {
+        System.out.println(phoneNumber+ " calling "+ friendNumber);
+    }
+    public void listenRingtone() {
+        System.out.println("WOW "+ ringtone+" is good");
+    }
+    public void pressRedButton() {
+        System.out.println("beeeeeep");
+    }
+
+    @Override
+    public String toString() {
+        return "ringtone= " + ringtone + ", phoneNumber= " + phoneNumber + ", model= " + model;
+    }
+    
+}
